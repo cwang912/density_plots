@@ -20,6 +20,6 @@ The population data came from the [Minnesota Population Center](https://www.nhgi
 
 ## Analysis in notebook form:
 
-The ipython notebook [0. Data prep](http://nbviewer.ipython.org/github/cwang912/density_plots/blob/master/0.%20Data%20prep.ipynb) details the cleaning and merging of the two data sets.
+[0. Data prep](http://nbviewer.ipython.org/github/cwang912/density_plots/blob/master/0.%20Data%20prep.ipynb) details the cleaning and merging of the two data sets.
 
-The ipython notebook [1. Distance vs. Density plots](http://nbviewer.ipython.org/github/cwang912/density_plots/blob/master/1.%20Density%20vs.%20distance%20plots.ipynb) details the plotting. Future work will attempt to fit a model to the data or allow for user input.
+[1. Distance vs. Density plots](http://nbviewer.ipython.org/github/cwang912/density_plots/blob/master/1.%20Density%20vs.%20distance%20plots.ipynb) details the plotting. Future work will attempt to fit a model to the data or allow for user input.
