@@ -5,16 +5,20 @@
 The shapefiles, which contain the land area (used for density) as well as a lat/long combination, are found on the [Census website](ftp://ftp2.census.gov/geo/tiger/TIGER2014/TRACT/)
 
 To download all of them at once, run:
+
 ```bash wget -m ftp://ftp2.census.gov/geo/tiger/TIGER2014/TRACT/```
+
 And the zip files will be downloaded in a nested folder. 
 
 To unzip all of the data files at once, run:
+
 ```bash find ./ -name \*.zip -exec unzip {} \;```
 
-This unsips ```.dbf``` files, which are a type of database file that can be converted to ```.csv``` using ```csvkit``` and the function ```in2csv``` with a ```-f dbf``` flag.
+This unzips ```.dbf``` files, which are a type of database file that can be converted to ```.csv``` using ```csvkit``` and the function ```in2csv``` with a ```-f dbf``` flag. We output the transformation into a file using:
+
 ```bash find ./ -name \*.dbf -exec in2csv -f dbf {} \; > file.csv```
 
-So ```file.csv``` has some repeating lines, but those get ignored when we merge the file with data about population.
+So ```file.csv``` has some repeating lines (the headers), but those get ignored when we merge the file with data about population.
 
 The population data came from the [Minnesota Population Center](https://www.nhgis.org/), which allows for historical data and geographies to be downloaded, although it does require creating an account. I downloaded this file and saved it as ```population.csv```
 
