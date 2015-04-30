@@ -1,6 +1,6 @@
 # Plotting density of census tracts by distance to a point
 
-1. Get the data!
+##  Get the data!
 
 The shapefiles, which contain the land area (used for density) as well as a lat/long combination, are found on the [Census website](ftp://ftp2.census.gov/geo/tiger/TIGER2014/TRACT/)
 
@@ -18,6 +18,8 @@ So ```file.csv``` has some repeating lines, but those get ignored when we merge 
 
 The population data came from the [Minnesota Population Center](https://www.nhgis.org/), which allows for historical data and geographies to be downloaded, although it does require creating an account. I downloaded this file and saved it as ```population.csv```
 
-2. The ipython notebook [0. Data prep](http://nbviewer.ipython.org/github/cwang912/density_plots/blob/master/0.%20Data%20prep.ipynb) details the cleaning and merging of the two data sets.
+## Analysis in notebook form:
 
-3. The ipython notebook [1. Distance vs. Density plots](http://nbviewer.ipython.org/github/cwang912/density_plots/blob/master/1.%20Density%20vs.%20distance%20plots.ipynb) details the plotting. Future work will attempt to fit a model to the data or allow for user input.
+The ipython notebook [0. Data prep](http://nbviewer.ipython.org/github/cwang912/density_plots/blob/master/0.%20Data%20prep.ipynb) details the cleaning and merging of the two data sets.
+
+The ipython notebook [1. Distance vs. Density plots](http://nbviewer.ipython.org/github/cwang912/density_plots/blob/master/1.%20Density%20vs.%20distance%20plots.ipynb) details the plotting. Future work will attempt to fit a model to the data or allow for user input.
